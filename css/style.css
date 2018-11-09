@@ -1,0 +1,309 @@
+﻿/* ============================================================================================== 
+This copyright notice must be kept untouched in the stylesheet at all times.
+The original version of this stylesheet and the associated (x)html 
+is available at http://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/
+Copyright (c) Script Tutorials. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
+================================================================================================= */
+/*@font-face {
+  font-family: myFont;
+  src: url(../fonts/msyi.tff);
+}*/
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  /*
+  font-family: myFont;
+  */
+}
+
+.row+.row {
+  margin-top: 4rem
+}
+
+.effect {
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* additional sections */
+#home {
+  background: url(../images/background_home.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#home .logo-home img {
+  width: 350px;
+  margin: 0 auto;
+ /* border: solid 3px #dfdfdf;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.52);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.52);*/
+}
+
+#clockdiv{
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 24px;
+  margin: 30px auto;
+}
+
+#clockdiv > div{
+  background: #2e3165;
+  /*
+  border: 1px solid rgba(0,0,0,0.6);
+  */
+  border-radius: 50%;
+  display: inline-block;
+  padding: 15px 12px ;
+  text-align: center;
+  width: 90px;
+}
+
+#clockdiv div > span{
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.smalltext{
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+#about {
+  padding: 70px 0;
+  color: #2e3165;
+}
+#about .lead{
+  text-align: justify;
+}
+#about .avatar img {
+  width: 230px;
+  text-align: center;
+  border: solid 3px #2e3165;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.52);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.52);
+}
+#favorite_song
+{
+  border: 0px;
+  width: 100%;
+  height: 400px;
+}
+
+#date {
+  background-color: #2e3165;
+  color: #ffffff;
+}
+
+#date .glyphicon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+#date .logo_date{
+  height: 140px;
+  width: 160px;
+}
+
+#staff {
+  background: url(../images/background_staff.jpg) no-repeat center center fixed;
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    color: #ffffff;
+}
+
+.single-staff {
+  position: relative;
+  overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.single-staff img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.single-staff:hover img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.staff-overlay {
+  position: absolute;
+  pointer-events: none;
+  padding: 12px;
+  width: -webkit-calc(100% - 16px);
+  width: -moz-calc(100% - 16px);
+  width: calc(100% - 16px);
+  height: -webkit-calc(100% - 16px);
+  height: -moz-calc(100% - 16px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: 8px;
+  opacity: 0;
+  background-color: #2e3165b5;
+}
+.staff-overlay:after {
+  content: '';
+  position: absolute;
+  width: -webkit-calc(100% - 24px);
+  width: -moz-calc(100% - 24px);
+  width: calc(100% - 24px);
+  height: -webkit-calc(100% - 24px);
+  height: -moz-calc(100% - 24px);
+  height: calc(100% - 24px);
+  top: 12px;
+  left: 12px;
+  border: 1px solid #fdfdfd;
+
+}
+.single-staff:hover .staff-overlay {
+  opacity: 1;
+}
+
+.staff-overlay h3 {
+  position: absolute;
+  bottom: 40px;
+  left: 26px;
+  color: #eee;
+  font-size: 18px;
+}
+.staff-overlay p {
+  position: absolute;
+  font-size: 12px;
+  color: #ddd;
+  left: 26px;
+  bottom: 10px;
+}
+
+
+#staff .panel {
+  opacity: 0.85;
+}
+
+#contact{
+    color: #2e3165;
+}
+
+#contact hr{
+    border-top: 1px solid #2e3165;
+}
+
+.contact-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contact-item .c-icon {
+  position: relative;
+  top: 6px;
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-color: #2e3165;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.contact-item .c-icon .fa {
+  font-size: 20px;
+  line-height: 58px;
+  color: #fafafa;
+}
+
+.contact-item .c-text {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 70px;
+  text-align: left;
+}
+
+.contact-item .c-text h5 {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.contact-item .c-text h6 {
+  margin: 0;
+  word-break: break-all;
+}
+
+#maps{
+  border: 0px;
+  width: 100%;
+  height: 400px;
+}
+
+footer {
+  padding: 20px 0;
+    background-color:#2e3165;
+    color: #FFFFFF;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
+}
