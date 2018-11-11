@@ -31,7 +31,7 @@ html, body {
 
 /* padded section */
 .pad-section {
-  padding: 50px 0;
+  padding: 25px 0 50px 0;
 }
 .pad-section img {
   width: 100%;
@@ -108,16 +108,18 @@ html, body {
 }
 
 #about {
-  padding: 70px 0;
   color: #2e3165;
 }
 #about .lead{
   text-align: justify;
 }
+
+#about .avatar{
+  margin: 6% 0;
+}
 #about .avatar img {
   width: 230px;
   text-align: center;
-  border: solid 3px #2e3165;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -125,6 +127,8 @@ html, body {
   -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.52);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.52);
 }
+
+
 #favorite_song
 {
   border: 0px;
@@ -150,14 +154,12 @@ html, body {
 }
 
 #date .logo_date{
-  height: 140px;
   width: 160px;
 }
 
 #staff {
   background: url(../images/background_staff.jpg) no-repeat center center fixed;
   display: table;
-  height: 800px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
